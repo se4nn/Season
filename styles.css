@@ -1,0 +1,94 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  font-display: block;
+  font-family: 'Syne', sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0 auto;
+  padding: 96px;
+  background: url(./background.png) repeat center center #F0E6DF;
+  background-size: 24px;
+}
+
+.logo {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40px;
+  color: #630331;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background: #F0E6DF;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 96px;
+  color: #630331;
+  margin-bottom: 48px;
+}
+
+p, .nav-link {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 56px;
+  color: #630331;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  position: relative;
+  padding: 72px 0;
+}
+
+.stamp {
+  position: absolute;
+  z-index: -1;
+  left: -48px;
+  top: 0;
+}
+
+nav:hover .stamp{
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 720px) {
+
+  body {
+    padding: 48px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  p, .nav-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+}
