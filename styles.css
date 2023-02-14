@@ -1,74 +1,63 @@
+@font-face {
+  font-family: New Grotesk Mono;
+  font-weight: 500;
+  font-display: block;
+  src: url(./fonts/NewGrotesk-MediumMono.otf);
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
+  color: #082675;
   font-display: block;
-  font-family: 'Syne', sans-serif;
+  font-family: 'New Grotesk Mono', sans-serif;
   line-height: 1.6;
 }
 
 body {
   margin: 0 auto;
-  padding: 96px;
-  background: url(./background.png) repeat center center #F0E6DF;
-  background-size: 24px;
-}
-
-.logo {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 40px;
-  color: #630331;
-  text-decoration: none;
-  text-transform: uppercase;
+  padding: 24px;
+  background: #FFF9F5;
+  height: calc(100vh - 48px);
   display: flex;
-  align-items: center;
-  background: #F0E6DF;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 104px;
-  line-height: 96px;
-  color: #630331;
-  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 25vw;
+  line-height: 25vw;
+  opacity: 0.08;
 }
 
-p, .nav-link {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 56px;
-  color: #630331;
+p, a{
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
   position: relative;
-  padding: 72px 0;
+  flex-wrap: wrap;
 }
 
-.stamp {
-  position: absolute;
-  z-index: -1;
-  left: -48px;
-  top: 0;
+nav p, a {
+  font-size: clamp(14px, 1.4vw, 1.4vw);
+  text-align: center;
+  z-index: 100;
 }
 
-nav:hover .stamp{
-  animation: rotation 8s infinite linear;
+footer p {
+  font-size: clamp(12px, 1vw, 1vw);
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+.invite-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -77,18 +66,15 @@ nav:hover .stamp{
 @media only screen and (max-width: 720px) {
 
   body {
-    padding: 48px;
+    padding: 16px;
   }
 
-  h1 {
-    font-size: 48px;
-    line-height: 56px;
+  nav p, a {
+    width: 100%;
   }
 
-  p, .nav-link {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+  footer p {
+    text-align: center;
   }
 
 }
