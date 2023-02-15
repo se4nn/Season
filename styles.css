@@ -44,14 +44,18 @@ nav {
   flex-wrap: wrap;
 }
 
-nav p, a {
+nav p, .invite-code a{
   font-size: clamp(14px, 1.4vw, 1.4vw);
   text-align: center;
   z-index: 100;
 }
 
-footer p {
+footer p, footer a  {
   font-size: clamp(12px, 1vw, 1vw);
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 .invite-code {
