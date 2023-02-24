@@ -74,7 +74,7 @@ p {
 .button {
   position: fixed;
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
   height: 56px;
   bottom: 48px;
   background: #082675;
@@ -116,7 +116,7 @@ p {
 
 .event {
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
   display: flex;
   flex-direction: column;
   gap: 24px;
