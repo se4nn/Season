@@ -129,6 +129,7 @@ p {
 .event-name {
   display: flex;
   position: relative;
+  gap: 24px;
 }
 
 .event-host {
