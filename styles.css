@@ -5,6 +5,20 @@
   src: url(./fonts/NewGrotesk-MediumMono.otf);
 }
 
+@font-face {
+  font-family: New Grotesk;
+  font-weight: 400;
+  font-display: block;
+  src: url(./fonts/NewGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: New Grotesk;
+  font-weight: 00;
+  font-display: block;
+  src: url(./fonts/NewGrotesk-Medium.otf);
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -64,6 +78,19 @@ footer a {
   align-items: center;
   height: 100%;
   justify-content: center;
+}
+
+.event {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 

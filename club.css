@@ -1,0 +1,197 @@
+@font-face {
+  font-family: New Grotesk;
+  font-weight: 400;
+  font-display: block;
+  src: url(./fonts/NewGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: New Grotesk;
+  font-weight: 500;
+  font-display: block;
+  src: url(./fonts/NewGrotesk-Medium.otf);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #082675;
+  font-display: block;
+}
+
+body {
+  margin: 0 auto 144px;
+  padding: 0;
+  background: #FFF9F5;
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+h1 {
+  font-family: 'New Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(28px, 4.8vw, 43px);
+  line-height: 120%;
+  letter-spacing: -0.024em;
+  font-feature-settings: 'ss02' on;
+  opacity: 1;
+  flex-grow: 1;
+}
+
+h2 {
+  font-family: 'New Grotesk Mono';
+  font-weight: 500;
+  font-size: 28px;
+  font-size: clamp(23px, 4vw, 40px);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'New Grotesk';
+  font-weight: 500;
+  font-size: clamp(19px, 3.2vw, 28px);
+  line-height: 120%;
+}
+
+h3 span {
+  font-weight: 400;
+}
+
+p {
+  font-family: 'New Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.button {
+  position: fixed;
+  width: 100%;
+  max-width: 480px;
+  height: 56px;
+  bottom: 48px;
+  background: #082675;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF9F5;
+}
+
+.mono {
+  font-family: 'New Grotesk Mono';
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mono a {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #082675;
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: calc(100% + 32px);
+  margin-bottom: -4.4vw;
+  max-width: 756px;
+}
+
+.event {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro {
+  gap: 8px;
+}
+
+.event-name {
+  display: flex;
+  position: relative;
+}
+
+.event-host {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.event-host p, .event-host .tag, .event-location {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.event-host .tag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 4px;
+  background: #F5ECE5;
+  border-radius: 4px;
+}
+
+.event-location {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 16px;
+  gap: 16px;
+  border: 1.5px solid #F5ECE5;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.allergens {
+  font-size: 13px;
+  font-weight: 400;
+  color: #415590;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 720px) {
+
+  .event {
+    max-width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+
+  .button {
+    max-width: calc(100% - 32px);;
+  }
+
+}
