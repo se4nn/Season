@@ -80,19 +80,6 @@ footer a {
   justify-content: center;
 }
 
-.event {
-  max-width: 480px;
-  display: flex;
-  flex-direction: column;
-}
-
-.event-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
 
 /* MEDIA QUERIES */
 
