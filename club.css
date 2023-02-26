@@ -191,7 +191,7 @@ hr {
 .signature {
   max-width: 200px;
   width: 50%;
-  margin: 16px 0 0 0;
+  margin: 16px 0 8px;
 }
 
 .sign-up a {
