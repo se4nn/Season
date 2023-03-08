@@ -58,7 +58,7 @@ nav {
   flex-wrap: wrap;
 }
 
-nav p, .invite-code a{
+nav p, nav a, .invite-code a{
   font-size: clamp(14px, 1.4vw, 1.4vw);
   text-align: center;
   z-index: 100;
@@ -89,7 +89,7 @@ footer a {
     padding: 16px;
   }
 
-  nav p, a {
+  nav p, nav a, a {
     width: 100%;
   }
 
